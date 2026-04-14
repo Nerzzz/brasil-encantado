@@ -1,0 +1,19 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+
+    .content{
+        width: 60vw;
+
+        p{
+            font-size: 15pt;
+
+            span{
+                color: var(--primary);
+                font-weight: 900;
+            }
+        }
+    }
+}

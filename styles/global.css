@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+:root{
+    --primary: #3359bc;
+    --secondary: #4870D5;
+    --white: #faf9fb;
+    --light-gray: #e7ebe7;
+
+    --text-color: #0f0f0f;
+
+    --heading: "Poppins";
+    --corpo: "Inter";
+}
+
+body{
+    background-color: var(--white);
+}
+
+p, span, a{
+    font-family: var(--corpo);
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    font-family: var(--heading);
+    font-size: 28pt;
+    font-weight: 600;
+    width: fit-content;
+}
+h3{
+    font-family: var(--heading);
+    font-size: 14pt;
+    font-weight: 500;
+    width: fit-content;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 40px;
+    padding: 40px 0px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-gray);
+    box-shadow: 0 2px 20px #6b686710;
+
+    .content{
+        position: relative;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        margin: 0 20px;
+        
+        img{
+            position: absolute;
+            height: 30px;
+            left: 0;
+        }
+
+        nav{
+            display: flex;
+            gap: 20px;
+            
+            a{
+                text-decoration: none;
+                font-family: var(--corpo);
+                padding: 2px 5px;
+                transition: 200ms ease-out;
+            }
+
+            a:hover{
+                transform: translateY(3px)
+            }
+
+            .current_page{
+                color: var(--secondary);
+                font-weight: 600;
+                border-bottom: 2px solid var(--secondary);
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 40px 0px 70px;
+
+    .content{
+        border-top: 1px solid var(--light-gray);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: center;
+        margin: 0px 60px;
+        padding-top: 30px;
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: absolute;
+            left: 0;
+            top: 30px;
+
+            img{
+                width: 40px;
+            }
+
+            span{
+                font-size: 14pt;
+                font-weight: 600;
+            }
+        }
+
+        .box{
+            padding: 0 40px;
+        }
+    }
+}

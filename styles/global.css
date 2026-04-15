@@ -21,6 +21,7 @@
 
 body{
     background-color: var(--white);
+    overflow-x: hidden;
 }
 
 p, span, a{
@@ -34,6 +35,12 @@ li{
 h1{
     font-family: var(--heading);
     font-size: 28pt;
+    font-weight: 600;
+    width: fit-content;
+}
+h2{
+    font-family: var(--heading);
+    font-size: 18pt;
     font-weight: 600;
     width: fit-content;
 }
@@ -53,12 +60,14 @@ main{
 section{
     display: flex;
     flex-direction: column;
-    margin: 0px 40px;
-    padding: 40px 0px;
+    padding: 0px 40px;
+    margin: 40px 0px;
+    width: 100%;
 }
 
 header{
     position: fixed;
+    z-index: 10000;
     width: 100%;
     top: 0;
     background-color: var(--white);
@@ -134,6 +143,10 @@ footer{
                 font-size: 14pt;
                 font-weight: 600;
             }
+        }
+
+        a{
+            color: #0f0f0f99;
         }
 
         .box{

@@ -2,8 +2,10 @@
     display: flex;
     position: relative;
     justify-content: center;
+    overflow-x: hidden;
     align-items: center;
     height: 100dvh;
+    margin-bottom: 60px;
     background-color: var(--text-color);
 
     .content{
@@ -45,24 +47,88 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
     flex: 1;
 
     .content{
         display: flex;
         flex-direction: column;
-        flex: 1 1 40%;
-        max-width: 40%;
+        flex: 1 1 20%;
+        max-width: 100%;
+        gap: 6px;
         
         p{
-            width: 100%;
+            width: fit-content;
         }
     }
     
     img{
         flex: 1 1 20%;
         object-fit: cover;
-        height: 300px;
-        max-width: 40%;
+        height: 400px;
+        max-width: 100%;
+        border-radius: 20px;
+        transition: 200ms ease-out;
+        border: solid 1px var(--light-gray);
+    }
+
+    img:hover{
+        border-radius: 40px;
+    }
+}
+
+.transports{
+    .cards{
+        margin-top: 40px;
+        gap: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .card{
+            display: flex;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            flex: 1 1 250px;
+            transition: 200ms;
+
+            .background{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: blur(2px);
+            }
+
+            .vehicle{
+                position: absolute;
+                width: 300px;
+                bottom: -10px;
+                right: -10%;
+            }
+            
+            .content{
+                background-color: #0f0f0f4f;
+                z-index: 200;
+                padding: 20px;
+                width: 100%;
+                transition: 200ms;
+                
+                h3,p{
+                    color: var(--white);
+                }
+            }
+        }
+
+        .card:hover{
+            border-radius: 40px;
+
+            .content{
+                background-color: #0f0f0f1c;
+            }
+        }
     }
 }

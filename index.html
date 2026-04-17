@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Venturo - Início</title>
+        <title>Brasil Encantado - Início</title>
 
         <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/media.css">
         <link rel="stylesheet" href="styles/index.css">
 
         <link rel="shortcut icon" href="public/images/logo/relicon.png" type="image/x-icon">
@@ -15,20 +16,22 @@
             <div class="content">
                 <a  href="/" class="logo">
                     <img src="./public/images/logo/colored.png" alt="Logo colorido da Venturo">
-                    <span>Venturo</span>
+                    <span>Brasil Encantado</span>
                 </a>
                 <nav>
                     <a href="/" class="current_page">Inicio</a>
                     <a href="/discovery.html">Descubra</a>
                     <a href="/gastronomy.html">Gastronomia</a>
+                    <a href="trip.html">Agendar Viagem</a>
                 </nav>
             </div>
         </header>
+        
         <main>
             <div class="hero">
                 <div class="content">
                     <h1>Deseja viajar mas não sabe com quem contar?</h1>
-                    <p>A Venturo está aqui para te ajudar<span>.</span></p>
+                    <p>A Brasil Encantado está aqui para te ajudar<span class="accent">.</span></p>
                 </div>
                 <img src="./public/images/logo-linhado.png" alt="Logo da Venturo branco">
                 <video autoplay muted loop playsinline>
@@ -40,21 +43,43 @@
             <section class="about">
                 <div class="content">
                     <h2>Quem somos</h2>
-                    <p>A Venturo nasceu com o propósito de unir os cinco cantos do Brasil, de maneira fácil, rápida e sofisticada.</p>
-                    <p>Com uma equipe apaixonada pelo que faz, a Venturo garante que seu sonho será realizado.</p>
+                    <p>A Brasil Encantado nasceu com o propósito de unir as cinco regiões do Brasil, de maneira fácil, rápida e sofisticada.</p>
+                    <p>Com uma equipe profissional apaixonada pelo que faz, a Brasil Encantado garante que seu sonho será realizado.</p>
                 </div>
                 <img src="./public/images/team-working.jpg" alt="Equipe trabalhando" class="shadow">
             </section>
 
+            <section class="discovery">
+                <h2>Descubra o que o Brasil pode lhe oferecer</h2>
+                <p>Separamos experiencias pelo Brasil que todos deveriam experimentar</p>
+
+                <div class="cards">
+                    <div class="card shadow">
+                        <img src="/public/images/brazil-map.jpg" alt="">
+                        <div class="content">
+                            <h2>Lugares</h2>
+                            <a href="/discovery.html">Veja mais</a>
+                        </div>
+                    </div>
+                    <div class="card shadow">
+                        <img src="/public/images/comida-brasileira-tipica.jpg" alt="">
+                        <div class="content">
+                            <h2>Gastronomia</h2>
+                            <a href="/gastronomy.html">Veja mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="transports">
                 <div class="content">
-                    <h2>Conte com a Venturo</h2>
-                    <p>A Venturo possuí uma frota de veículos e soluções modernas que facilitam a sua viagem, tornando os momentos mais simples em memórias inesquecíveis!</p>
+                    <h2>Conte com a <span class="accent">Brasil Encantado</span></h2>
+                    <p>A Brasil Encantado possuí uma frota de veículos e soluções modernas que facilitam a sua viagem, tornando os momentos mais simples em memórias inesquecíveis!</p>
                 </div>
                 <div class="cards">
                     <div class="card shadow">
                         <div class="content">
-                            <h3>Ônubus</h3>
+                            <h3>Ônibus</h3>
                             <p>Contamos com ônibus confortáveis e climatizados</p>
                         </div>
                         <img src="./public/images/road-and-field.jpg" alt="Foto de uma rodovia e um campo ao fundo" class="background">
@@ -79,33 +104,47 @@
                 </div>
             </section>
         </main>
+
         <footer>
             <div class="content">
                 <div class="logo">
                     <img src="./public/images/logo/colored.png" alt="Logo preto da Venturo">
-                    <span>Venturo</span>
+                    <span>Brasil Encantado</span>
                 </div>
-                <div class="box">
-                    <h3>Alunos</h3>
-                    <ul>
-                        <li><span>Guilherme S. Santos</span></li>
-                        <li><span>Matheus C. Camargo</span></li>
-                    </ul>
+                <div class="info">
+                    <div class="box">
+                        <h3>Alunos</h3>
+                        <ul>
+                            <li><span>Guilherme S. Santos</span></li>
+                            <li><span>Matheus C. Camargo</span></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li><span>contato@brasilencantado.com</span></li>
+                            <li><span>+55 (19) 99123-4567</span></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h3>Navegação</h3>
+                        <ul>
+                            <li>
+                                <a href="/">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="discovery.html">Descubra</a>
+                            </li>
+                            <li>
+                                <a href="gastronomy.html">Gastronomia</a>
+                            </li>
+                            <li>
+                                <a href="trip.html">Agendar Viagem</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="box">
-                    <h3>Navegação</h3>
-                    <ul>
-                        <li>
-                            <a href="/">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="discovery.html">Descubra</a>
-                        </li>
-                        <li>
-                            <a href="gastronomy.html">Gastronomia</a>
-                        </li>
-                    </ul>
-                </div>
+                <p>© 2026 Brasil Encantado</p>
             </div>
         </footer>
     </body>

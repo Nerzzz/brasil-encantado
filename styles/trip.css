@@ -1,3 +1,65 @@
 main{
     margin-top: 66px;
 }
+
+.form_box{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    
+    form{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 100%;
+        flex: 1;
+
+        .input_box{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            span{
+                font-size: 10pt;
+                color: #0f0f0f99;
+                font-weight: 600;
+            }
+
+            textarea, input[type="email"]{
+                max-width: 100%;
+                min-width: 100%;
+                outline: none;
+                padding: 12px;
+                border-radius: 10px;
+                border: solid 1px var(--light-gray);
+                transition: 200ms ease-out;
+                font-family: var(--corpo);
+            }
+
+            textarea:hover, input[type="email"]:hover, textarea:focus, input[type="email"]:focus{
+                border-color: var(--secondary);
+            }
+        }
+
+        input[type="submit"]{
+            background-color: var(--primary);
+            padding: 12px 24px;
+            border-radius: 10px;
+            color: var(--white);
+            outline: none;
+            border: none;
+            width: fit-content;
+            font-size: 12pt;
+            cursor: pointer;
+            font-weight: 500;
+            transition: 200ms ease-out;
+        }
+
+        input[type="submit"]:hover{
+            transform: scale(1.05);
+            background-color: var(--secondary);
+        }
+    }
+}

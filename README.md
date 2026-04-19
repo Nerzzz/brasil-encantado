@@ -17,4 +17,4 @@ Desenvolvido para o curso de Ciência da Computação pela Escola de Engenharia 
 
 ---
 
-Acesse o projeto clicando [aqui](nerzzz.github.io/brasil-encantado/)
+Acesse o projeto clicando [aqui](hhtps://nerzzz.github.io/brasil-encantado/)
